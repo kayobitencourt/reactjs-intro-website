@@ -22,7 +22,7 @@ export function App(){
       }).to("#intro-slider",{
         xPercent: "-100",
         duration: 1.3,
-      }).from(["#welcome", "#welcome-samuel"], {
+      }).from("#welcome", {
         opacity:0,
         duration:2,
         stagger: 0.5,
@@ -34,13 +34,12 @@ export function App(){
   return(
     <div className="relative" ref={comp}>
       <div id="intro-slider" className="h-screen p-10 bg-zinc-100 absolute text-gray-950 top-0 left-0 z-10 w-full flex flex-col gap-10 track">
-        <h1 className="text-8xl" id="title-1">PAKEN</h1>
-        <h1 className="text-8xl" id="title-2">FEITO</h1>
-        <h1 className="text-8xl" id="title-3">PRA VOCE</h1>
+        <h1 className="text-9xl" id="title-1">PAKEN</h1>
+        <h1 className="text-9xl" id="title-2">FEITO</h1>
+        <h1 className="text-9xl" id="title-3">PRA VOCE</h1>
       </div>
-      <div className="h-screen flex flex-col bg-gray-950 justify-center place-items-center">
+      <div className=" h-screen flex flex-col bg-custom-gradient justify-center place-items-center">
         <h1 id="welcome" className="text-9xl font-bold">Olá</h1>
-        <h2 id="welcome-samuel" className="text-9xl font-bold">Samuel!!</h2>
       </div>
     </div>
   )
