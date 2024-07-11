@@ -7,9 +7,8 @@ export function App(){
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
       const t1 = gsap.timeline()
-      t1.from("#intro-slider", {
-        xPercent: "-100",
-        duration:1.3,
+      t1.from("#intro-slider", {       
+        duration:0.5,
         delay:0.3,
       }).from(["#title-1", "#title-2", "#title-3"], {
         opacity: 0,
@@ -34,7 +33,7 @@ export function App(){
   }, [])
   return(
     <div className="relative" ref={comp}>
-      <div id="intro-slider" className="h-screen p-10 bg-gray-50 absolute text-gray-950 top-0 left-0 z-10 w-full flex flex-col gap-10 track">
+      <div id="intro-slider" className="h-screen p-10 bg-zinc-100 absolute text-gray-950 top-0 left-0 z-10 w-full flex flex-col gap-10 track">
         <h1 className="text-8xl" id="title-1">PAKEN</h1>
         <h1 className="text-8xl" id="title-2">FEITO</h1>
         <h1 className="text-8xl" id="title-3">PRA VOCE</h1>
