@@ -34,9 +34,9 @@ export function Home(){
   return(
     <div className="relative" ref={comp}>
       <div id="intro-slider" className="h-screen p-10 bg-zinc-100 absolute text-gray-950 top-0 left-0 z-10 w-full flex flex-col gap-10 track">
-        <h1 className="text-9xl" id="title-1">ARCVS</h1>
-        <h1 className="text-9xl" id="title-2">TECH</h1>
-        <h1 className="text-9xl" id="title-3">DEV</h1>
+        <h1 className="text-9xl" id="title-1">KAYO</h1>
+        <h1 className="text-9xl" id="title-2">WEB DEVELOPER</h1>
+        <h1 className="text-9xl" id="title-3">UI/UX</h1>
       </div>
       <div className=" h-screen flex flex-col bg-custom-gradient justify-center place-items-center">
         <h1 id="welcome" className="text-9xl font-bold">Olá</h1>
